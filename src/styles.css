@@ -37,5 +37,25 @@ p {
     color: #eeeeee;
 }
 
+.glass .sub-heading{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
 
 
+.top-spacing {
+    padding-top: 5%;
+}
+
+
+.glass {
+        padding: 6%;
+        border: 1px solid rgba(255, 255, 255, 0.705);
+        backdrop-filter: blur(19px) saturate(170%);
+        -webkit-backdrop-filter: blur(19px) saturate(170%);
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.625);
+   
+}
