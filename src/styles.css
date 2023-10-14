@@ -23,22 +23,19 @@
 }
 
 
+
+h1,h2,h3,h4,h5,h6, .score {
+    font-family: 'MonumentExtended-Bold', sans-serif;
+    color: #eeeeee;
+}
+
+
 p {
     font-family: 'Manrope', sans-serif;
-
     font-size: 1rem;
     line-height: 1.5;
     color: #eeeeee;
 }
 
-.monument-bold{
-    font-family: 'MonumentExtended-Bold', sans-serif;
-    font-weight: bold;
 
-    color: #eeeeee;
-}
 
-.monument-normal {
-    font-family: 'MonumentExtended-Normal', sans-serif;
-    color: #eeeeee;
-}
