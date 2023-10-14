@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Manrope';
+    src: url('/assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonumentExtended-Bold';
+    src: url('/assets/fonts/MonumentExtended-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MonumentExtended-Normal';
+    src: url('/assets/fonts/MonumentExtended-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+p {
+    font-family: 'Manrope', sans-serif;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.monument-bold{
+    font-family: 'MonumentExtended-Bold', sans-serif;
+    font-weight: bold;
+
+    color: #eeeeee;
+}
+
+.monument-normal {
+    font-family: 'MonumentExtended-Normal', sans-serif;
+    color: #eeeeee;
+}
