@@ -6,8 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
-const routes: Routes = [ // 2. Define a route for the WelcomeComponent
-  { path: 'welcome', component: WelcomeComponent }
+const routes: Routes = [
+  { 
+    path: 'welcome', component: WelcomeComponent,
+  },
+  {
+    path: '', redirectTo: 'welcome', pathMatch: 'full'
+  }
 ];
 
 @NgModule({
