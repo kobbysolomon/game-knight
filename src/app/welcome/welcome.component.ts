@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
+  numberOfTeams: number = 0;
+  scoreToWin: number = 0;
+  scoreIncrement: number = 0;
 
 }

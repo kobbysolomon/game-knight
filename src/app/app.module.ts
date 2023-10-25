@@ -5,6 +5,16 @@ import { RouterModule, Routes } from '@angular/router'; // 1. Import RouterModul
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatSelectModule} from '@angular/material/select';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
 
 const routes: Routes = [
   { 
@@ -23,7 +33,13 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes) // 3. Add RouterModule to imports array and call forRoot() method with Routes array
+    MatSlideToggleModule,
+    MatSelectModule,
+    MatIconModule,
+    MatDividerModule,
+    MatButtonModule,
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule // 3. Add RouterModule to imports array and call forRoot() method with Routes array
   ],
   providers: [],
   bootstrap: [AppComponent]
