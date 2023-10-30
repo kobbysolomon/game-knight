@@ -12,3 +12,19 @@
     text-align: center;
     margin: 0 auto;
 }
+
+.roundsWon {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.score-increment-buttons-container .btn {
+    font-size: 2.5rem;
+    padding: 2% 6%;
+}
+
+.team-name-container {
+    text-align: center;
+    margin-top: 8%;
+}

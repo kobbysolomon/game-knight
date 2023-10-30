@@ -6,32 +6,131 @@
             <div class="row ">
 
                 <div class="col-md-3 col-sm-12">
-                    <div class=" text-center">
+                    <div class=" ">
                         <img class="logo" width="40%" src="assets\Game-Knight-Logo-Horizontal.svg"
                             alt="Game Knight Logo">
                     </div>
                 </div>
 
-
-
                 <div class="col-md-3 col-sm-12 ">
                     <h5 class="">Rounds<br>Played: {{roundsPlayed}} </h5>
                 </div>
                 <div class="col-md-3 col-sm-12 ">
-                    <h5 class="">Score To Win Round: {{scoreToWin}} </h5>
+                    <h5 class="">Score To Win Round: {{scoreToWinRound}} </h5>
                 </div>
 
 
-                <div class="col-md-3 d-flex ">
+                <div class="col-md-3  ">
                     <div class="center-mobile">
-                        <button class="btn btn-lg btn-danger negative-btn "><span style="font-size: 1.6rem;"><i class="bi bi-box-arrow-right"></i></span></button>
+                        <button class="btn btn-lg btn-danger negative-btn " data-toggle="tooltip" data-placement="right" title="End Session"><span style="font-size: 1.6rem;"><i
+                                    class="bi bi-box-arrow-right"></i></span></button>
 
                     </div>
                 </div>
             </div>
-
-
         </div>
+
+
+        <div class="top-spacing-small"></div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="glass pd-2">
+                    <img width="5%" src="assets\rounds-won-trophy.svg" alt="Trophy image for rounds won"><span
+                        class="roundsWon"> | {{teamOneRoundsWon}}</span>
+                    <div class="top-spacing-small"></div>
+                    <div class="pd-4">
+                        <div class="row">
+                            <!-- big score number here  -->
+                            <div class="col-sm-12">
+                                <div class="score">
+                                    <h1 class="score">{{teamOneScore}}</h1>
+                                </div>
+                            </div>
+
+                            <!-- Minus and plus buttons here -->
+                            <div class="col-sm-12">
+                                <div class="score-increment-buttons-container ">
+                                    <button type="button" class="btn btn-primary negative-btn"(click)="decreaseTeamOneScore()" >- {{scoreIncrement}}</button>&nbsp;&nbsp;&nbsp;
+                                    <button type="button" class="btn btn-primary positive-btn" (click)="increaseTeamOneScore()">+ {{scoreIncrement}}</button>&nbsp;&nbsp;&nbsp;
+                            
+                                </div>
+                            </div>
+
+
+                            
+                            <!-- Team Name here -->
+                            <div class="col-sm-12">
+                                <div class="team-name-container ">
+                                    <h3 class="team-name">{{teamOneName}}</h3>
+
+                                </div>
+                            </div>
+
+                            <div class="top-spacing"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-md-6 col-sm-12">
+                
+                    
+                    <div class="glass pd-2">
+                        <img width="5%" src="assets\rounds-won-trophy.svg" alt="Trophy image for rounds won"><span
+                            class="roundsWon"> | {{teamTwoRoundsWon}}</span>
+                        <div class="top-spacing-small"></div>
+                        <div class="pd-4">
+                            <div class="row">
+                                <!-- big score number here  -->
+                                <div class="col-sm-12">
+                                    <div class="score">
+                                        <h1 class="score">{{teamTwoScore}}</h1>
+                                    </div>
+                                </div>
+    
+                                <!-- Minus and plus buttons here -->
+                                <div class="col-sm-12">
+                                    <div class="score-increment-buttons-container ">
+                                        <button type="button" class="btn btn-primary negative-btn" (click)="decreaseTeamTwoScore()">- {{scoreIncrement}}</button>&nbsp;&nbsp;&nbsp;
+                                        <button type="button" class="btn btn-primary positive-btn" (click)="increaseTeamTwoScore()">+ {{scoreIncrement}}</button>&nbsp;&nbsp;&nbsp;
+                                    
+    
+                                    </div>
+                                </div>
+    
+    
+                                
+                                <!-- Team Name here -->
+                                <div class="col-sm-12">
+                                    <div class="team-name-container ">
+                                        <h3 class="team-name">{{teamTwoName}}</h3>
+    
+                                    </div>
+                                </div>
+    
+                                <div class="top-spacing"></div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                
+
+            </div>
+        </div>
+
+
+
     </div>
 
 

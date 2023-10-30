@@ -41,6 +41,15 @@ h6,
   
 }
 
+.score {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.score-increment-buttons-container{
+    /* font-size: 3rem; */
+    text-align: center;
+}
 
 h5{
     line-height: 1.5;
