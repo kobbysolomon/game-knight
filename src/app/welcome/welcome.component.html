@@ -1,11 +1,12 @@
 <!-- Add class main-bg to the opening div below and comment out the video to switch to main poly bg -->
-    <div class="fallback-bg ">
+<div class="main-bg ">
+    <!-- <div class="fallback-bg "> -->
 
-        
+
     <video id="background-video" autoplay loop muted poster="assets\main-bg-poster.png">
         <source src="assets\test-video-bg.mp4" type="video/mp4">
-        </video>
-        
+    </video>
+
 
     <div class="top-spacing"></div>
 
@@ -16,13 +17,14 @@
             <div class="col-md-8"></div>
 
             <div class="col-md-4 col-sm-12">
-                <div class="glass">
+                <div class="glass pd-6">
                     <div class="logo-container text-center">
                         <img class="logo" width="100%" src="assets\Game-Knight-Logo-Horizontal.svg"
                             alt="Game Knight Logo">
                     </div>
                     <h4 class="sub-heading">Let The Games Begin</h4>
-                    <p class="text-center">You’ve got your squad set and your games ready.<br> Here’s an easy way to keep
+                    <p class="text-center">You’ve got your squad set and your games ready.<br> Here’s an easy way to
+                        keep
                         score.</p>
 
                     <div class="form-container">
@@ -50,7 +52,7 @@
                                         <mat-option [value]="20">20</mat-option>
                                         <mat-option [value]="50">50</mat-option>
                                         <mat-option [value]="100">We'll keep going</mat-option>
-                                       
+
                                     </mat-select>
                                 </mat-form-field>
                             </div>
@@ -69,16 +71,17 @@
                             </div>
                         </div>
 
-<p class="text-center">Testing Two way binding</p>
-<p class="text-center">Number of Teams is: {{numberOfTeams}}</p>
-<p class="text-center">score to win round is: {{scoreToWin}}</p>
-<p class="text-center">scoreincrement is: {{scoreIncrement}}</p>
+                        <p class="text-center">Testing Two way binding</p>
+                        <p class="text-center">Number of Teams is: {{numberOfTeams}}</p>
+                        <p class="text-center">score to win round is: {{scoreToWin}}</p>
+                        <p class="text-center">scoreincrement is: {{scoreIncrement}}</p>
                     </div>
                     <div class="row">
 
 
                         <div class="d-grid">
-                            <button class="btn btn-lg btn-primary positive-btn" type="button">Start Session</button>
+                            <button class="btn btn-lg btn-primary positive-btn form-btn" type="button">START
+                                SESSION</button>
                         </div>
 
 
@@ -87,7 +90,7 @@
 
             </div>
         </div>
-    </div>  
+    </div>
 
     <div class="top-spacing"></div>
-    </div>
+</div>

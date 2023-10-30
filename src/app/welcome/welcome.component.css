@@ -40,6 +40,11 @@
     
 }
 
+.form-btn{
+        width: 90%;
+    margin: 0 auto;
+}
+
 .glass {
     padding-bottom: 10%;
 }
@@ -61,24 +66,6 @@
 }
 
 
-.positive-btn{
-background-color: #3db7af;
-color: #fff;
-/* font-weight: 600; */
-border: none;
-width: 90%;
-margin: 0 auto;
-}
-
-.positive-btn:hover{
-    background-color: #329f98;
-    color: #fff;
-    /* font-weight: 600; */
-    border: none;
-    width: 90%;
-    margin: 0 auto;
-    cursor: pointer;
-    }
 
 
 

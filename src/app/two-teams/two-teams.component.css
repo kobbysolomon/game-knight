@@ -1,0 +1,14 @@
+.thin-border-right
+{
+    border-right: 1px solid #fff;
+}
+
+.float-right
+{
+    float: right!important;
+}
+
+.center-mobile {
+    text-align: center;
+    margin: 0 auto;
+}

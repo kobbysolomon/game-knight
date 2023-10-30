@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap-icons/font/bootstrap-icons.css"; */
+
+/* You can add g
+
+
+lobal styles to this file, and also import other style files */
 @font-face {
     font-family: 'Manrope';
     src: url('/assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
@@ -24,11 +29,22 @@
 
 
 
-h1,h2,h3,h4,h5,h6, .score {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.score {
     font-family: 'MonumentExtended-Bold', sans-serif;
     color: #eeeeee;
+  
 }
 
+
+h5{
+    line-height: 1.5;
+}
 
 p {
     font-family: 'Manrope', sans-serif;
@@ -37,7 +53,7 @@ p {
     color: #eeeeee;
 }
 
-.glass .sub-heading{
+.glass .sub-heading {
     font-family: 'Manrope', sans-serif;
     font-size: 1.6rem;
     text-align: center;
@@ -48,17 +64,143 @@ p {
     padding-top: 5%;
 }
 
+.top-spacing-small {
+    padding-top: 2%;
+}
 
 .glass {
-        padding: 6%;
-        border: 1px solid rgba(255, 255, 255, 0.705);
-        backdrop-filter: blur(19px) saturate(170%);
-        -webkit-backdrop-filter: blur(19px) saturate(170%);
-        background-color: rgba(255, 255, 255, 0.08);
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.625);
-        
-   
+    border: 1px solid rgba(255, 255, 255, 0.705);
+    backdrop-filter: blur(19px) saturate(170%);
+    -webkit-backdrop-filter: blur(19px) saturate(170%);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.625);
+
+
 }
-html, body { height: 100%; }
+
+.btn {
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.positive-btn {
+    background-color: #3db7af;
+
+}
+
+.positive-btn:hover {
+    background-color: #329f98;
+    color: #fff;
+    cursor: pointer;
+}
+
+.negative-btn {
+    background-color: #DE4D43;
+
+}
+
+.negative-btn:hover {
+    background-color: #c54138;
+    color: #fff;
+    cursor: pointer;
+}
+
+.exit-session{
+    padding: 45%;
+}
+
+.pd-6 {
+    padding: 6%;
+}
+
+.pd-4 {
+    padding: 4%;
+}
+
+.pd-2 {
+    padding: 2%;
+}
+
+.pd-1 {
+    padding: 1%;
+}
+
+.main-bg {
+    height: 100vh;
+    width: 100vw;
+
+
+    /* flat blue gradient bg */
+    /* background: rgb(57,114,193);
+    background: linear-gradient(60deg, rgba(57,114,193,1) 35%, rgba(17,175,209,1) 100%); */
+
+
+    /* Polymorphism gradient bg */
+    background-color: #111927;
+    background-image:
+        radial-gradient(at 47% 33%, hsl(214.84, 65%, 53%) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(190.45, 97%, 31%) 0, transparent 55%);
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+/* Media queries for tablet devices */
+@media only screen and (max-width: 768px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .score {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 480px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .score {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .ghost-mobile {
+        visibility: hidden;
+    }
+
+    .center-mobile {
+        text-align: center;
+    }
+
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

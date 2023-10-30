@@ -12,14 +12,14 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import { TwoTeamsComponent } from './two-teams/two-teams.component';
 
 
 
 
 const routes: Routes = [
-  { 
-    path: 'welcome', component: WelcomeComponent,
-  },
+  { path: 'welcome', component: WelcomeComponent},
+  { path: 'two-teams', component: TwoTeamsComponent},
   {
     path: '', redirectTo: 'welcome', pathMatch: 'full'
   }
@@ -28,7 +28,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    TwoTeamsComponent
   ],
   imports: [
     BrowserModule,
