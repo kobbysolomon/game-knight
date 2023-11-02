@@ -13,15 +13,19 @@
                 </div>
 
                 <div class="col-md-3 col-sm-12 ">
-                    <h5 class="">Rounds<br>Played: {{roundsPlayed}} </h5>
+                    <div class="center-on-mobile ">
+                    <h5 class="">Total Rounds Played: {{roundsPlayed}} </h5>
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-12 ">
+                    <div class="center-on-mobile ">
                     <h5 class="">Score To Win Round: {{scoreToWinRound}} </h5>
+                    </div>
                 </div>
 
 
                 <div class="col-md-3  ">
-                    <div class="center-mobile">
+                    <div class="center-mobile desktop-float-right">
                         <button class="btn btn-lg btn-danger negative-btn " data-toggle="tooltip" data-placement="right" title="End Session"><span style="font-size: 1.6rem;"><i
                                     class="bi bi-box-arrow-right"></i></span></button>
 
@@ -36,8 +40,11 @@
         <div class="row">
             <div class="col-md-6 col-sm-12 mb-3">
                 <div class="glass pd-2">
-                    <img width="5%" src="assets\rounds-won-trophy.svg" alt="Trophy image for rounds won"><span
-                        class="roundsWon"> | {{teamOneRoundsWon}}</span>
+                    <p>
+                    <img style="
+                        vertical-align: text-bottom;" width="5%" src="assets\rounds-won-trophy.svg" alt="Trophy image for rounds won">
+                    <span class="rounds-won"> | {{teamOneRoundsWon}}</span>
+                    </p>
                     <div class="top-spacing-small"></div>
                     <div class="pd-4">
                         <div class="row">
@@ -84,9 +91,11 @@
             <div class="col-md-6 col-sm-12 mb-3">
                 
                     
-                    <div class="glass pd-2">
-                        <img width="5%" src="assets\rounds-won-trophy.svg" alt="Trophy image for rounds won"><span
-                            class="roundsWon"> | {{teamTwoRoundsWon}}</span>
+                    <div class="glass pd-2"> <p>
+                        <img style="
+                            vertical-align: text-bottom;" width="5%" src="assets\rounds-won-trophy.svg" alt="Trophy image for rounds won">
+                        <span class="rounds-won"> | {{teamTwoRoundsWon}}</span>
+                        </p>
                         <div class="top-spacing-small"></div>
                         <div class="pd-4">
                             <div class="row">

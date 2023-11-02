@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-two-teams',
   templateUrl: './two-teams.component.html',
   styleUrls: ['./two-teams.component.css']
 })
-export class TwoTeamsComponent {
-
+export class TwoTeamsComponent implements OnInit {
+  
 
   scoreToWinRound: number = 21;
   scoreIncrement: number = 1;
@@ -17,10 +17,16 @@ export class TwoTeamsComponent {
 
 
   teamOneName: string = "Team One";
-  teamOneScore: number = 18;
+  teamOneScore: number = 0;
 
   teamTwoName: string = "Team Two";
-  teamTwoScore: number = 36;
+  teamTwoScore: number = 0;
+
+  isMobile: boolean = false;
+
+  ngOnInit() {
+    
+  }
 
 
 
@@ -40,10 +46,4 @@ export class TwoTeamsComponent {
   decreaseTeamTwoScore() {
     this.teamTwoScore -= this.scoreIncrement;
   }
-
-
-
-  
-
-
 }
