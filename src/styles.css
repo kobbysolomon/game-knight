@@ -113,6 +113,14 @@ p {
 
 }
 
+
+.error-message {
+    color: #cd615a;
+    /* font-size: 0.8rem; */
+    /* font-family: 'Manrope', sans-serif; */
+    font-weight: 600;
+}
+
 .negative-btn:hover {
     background-color: #c54138;
     color: #fff;
