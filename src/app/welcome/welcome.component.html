@@ -3,9 +3,9 @@
     <!-- <div class="fallback-bg "> -->
 
 
-    <video id="background-video" autoplay loop muted poster="assets\main-bg-poster.png">
+    <!-- <video id="background-video" autoplay loop muted poster="assets\main-bg-poster.png">
         <source src="assets\test-video-bg.mp4" type="video/mp4">
-    </video>
+    </video> -->
 
 
     <div class="top-spacing"></div>
@@ -17,94 +17,107 @@
             <div class="col-md-8"></div>
 
             <div class="col-md-4 col-sm-12">
-                <div class="glass pd-6">
-                    <div class="logo-container text-center">
+                <div class="glass  pd-6">
+                    <div class="logo-container text-center  ">
                         <img class="logo" width="100%" src="assets\Game-Knight-Logo-Horizontal.svg"
                             alt="Game Knight Logo">
                     </div>
-                    <h4 class="sub-heading">Let The Games Begin</h4>
+                    <h4 class="sub-heading ">Let The Games Begin</h4>
                     <p class="text-center">You’ve got your squad set and your games ready.<br> Here’s an easy way to
                         keep
                         score.</p>
 
                     <div class="form-container">
                         <form [formGroup]="welcomeForm" (ngSubmit)="submitWelcomeForm()">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <mat-form-field>
-                                    <mat-label>Number of Teams</mat-label>
-                                    <mat-select formControlName="numberOfTeams" [(value)]="numberOfTeams">
-                                        <mat-option [value]="2">2</mat-option>
-                                        <mat-option [value]="3">3</mat-option>
-                                        <mat-option [value]="4">4</mat-option>
-                                    </mat-select>
-                                </mat-form-field>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <mat-form-field>
+                                        <mat-label>Number of Teams</mat-label>
+                                        <mat-select formControlName="numberOfTeams" [(value)]="numberOfTeams">
+                                            <mat-option [value]="2">2</mat-option>
+                                            <mat-option [value]="3">3</mat-option>
+                                            <mat-option [value]="4">4</mat-option>
+                                        </mat-select>
+
+                                        <mat-error *ngIf="this.welcomeForm.get('numberOfTeams')?.hasError('required')"
+                                            style="color: #f0aaa5;">Select the number of teams</mat-error>
+
+                                    </mat-form-field>
+                                </div>
+
+
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <mat-form-field>
-                                    <mat-label>Score To Win Round</mat-label>
-                                    <mat-select formControlName="scoreToWin" [(value)]="scoreToWin">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <mat-form-field>
+                                        <mat-label>Score To Win Round</mat-label>
+                                        <mat-select formControlName="scoreToWin" [(value)]="scoreToWin">
 
-                                        <mat-option [value]="10">10</mat-option>
-                                        <mat-option [value]="15">15</mat-option>
-                                        <mat-option [value]="20">20</mat-option>
-                                        <mat-option [value]="50">50</mat-option>
-                                        <mat-option [value]="100">We'll keep going</mat-option>
+                                            <mat-option [value]="10">10</mat-option>
+                                            <mat-option [value]="15">15</mat-option>
+                                            <mat-option [value]="20">20</mat-option>
+                                            <mat-option [value]="50">50</mat-option>
+                                            <mat-option [value]="100">We'll keep going</mat-option>
+                                        </mat-select>
+                                        <mat-error *ngIf="this.welcomeForm.get('scoreToWin')?.hasError('required')"
+                                            style="color: #f0aaa5;">Select a winning score for your game
+                                            rounds</mat-error>
 
-                                    </mat-select>
-                                </mat-form-field>
+
+                                    </mat-form-field>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <mat-form-field>
-                                    <mat-label>Score Increment</mat-label>
-                                    <mat-select formControlName="scoreIncrement" [(value)]="scoreIncrement">
-                                        <mat-option [value]="1">1</mat-option>
-                                        <mat-option [value]="2">2</mat-option>
-                                        <mat-option [value]="5">5</mat-option>
-                                    </mat-select>
-                                    <!-- <mat-error *ngIf="errorMessages.scoreIncrementError">{{errorMessages.scoreIncrementError}}</mat-error>
-                                    <mat-error *ngIf="scoreIncrement.hasError('required')">Please choose an animal</mat-error>
-                                    <p class="error-message" *ngIf="errorMessages.scoreIncrementError">{{errorMessages.scoreIncrementError}}</p> -->
-                                    <!-- Add validation for each field. review mat-error from angular material docs -->
-                                </mat-form-field>
-                                
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <mat-form-field>
+                                        <mat-label>Score Increment</mat-label>
+                                        <mat-select formControlName="scoreIncrement" [(value)]="scoreIncrement">
+                                            <mat-option [value]="1">1</mat-option>
+                                            <mat-option [value]="2">2</mat-option>
+                                            <mat-option [value]="5">5</mat-option>
+                                        </mat-select>
+                                        <mat-error *ngIf="this.welcomeForm.get('scoreIncrement')?.hasError('required')"
+                                            style="color: #f0aaa5;">Pick how scores should change: +1, +2, or +5</mat-error>
+
+
+                                    </mat-form-field>
+
+                                </div>
                             </div>
-                        </div>
 
-                        <!-- <p class="text-center">Testing Two way binding</p>
+                            <!-- <p class="text-center">Testing Two way binding</p>
                         <p class="text-center">Number of Teams is: {{numberOfTeams}}</p>
                         <p class="text-center">score to win round is: {{scoreToWin}}</p>
                         <p class="text-center">scoreincrement is: {{scoreIncrement}}</p> -->
 
-                        
-                        <div class="row">
+
+                            <div class="row">
 
 
-                            <div class="d-grid">
-                                <button class="btn btn-lg btn-primary positive-btn form-btn" type="submit">START
-                                    SESSION</button>
+                                <div class="d-grid">
+                                    <button class="btn btn-lg btn-primary positive-btn form-btn" type="submit">START
+                                        SESSION</button>
+                                </div>
+
+                                <div class="col-lg-12 text-center mt-4">
+                                    <p *ngIf="errorMessage" class="animate__animated animate__shakeX" >{{errorMessage}}</p>
+                                </div>
+
                             </div>
-
-
-                        </div>
                         </form>
                         <div *ngIf="generatedTeamNames.length > 0">
-                        <h6 style="margin-top: 5%;font-size: 0.85rem;">Generated Team Names are:</h6>
-                        <ul>
-                            <li *ngFor="let team of generatedTeamNames">{{ team }}</li>
-                        </ul>
-                        
-                    </div>
+                            <h6 style="margin-top: 5%;font-size: 0.85rem;">Generated Team Names are:</h6>
+                            <ul>
+                                <li *ngFor="let team of generatedTeamNames">{{ team }}</li>
+                            </ul>
+
+                        </div>
                     </div>
                     <!-- end of form container -->
 
-                    
+
 
 
                 </div>

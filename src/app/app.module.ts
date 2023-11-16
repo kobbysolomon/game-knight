@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import {NgFor, NgIf} from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router'; // 1. Import RouterModule and Routes
 
@@ -9,11 +10,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule,FormControl, Validators, FormsModule, } from '@angular/forms';
 
 
+
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { TwoTeamsComponent } from './two-teams/two-teams.component';
 import { TeamNamesService } from './services/team-names.service';
 

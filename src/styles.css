@@ -1,9 +1,11 @@
 /* @import "~bootstrap-icons/font/bootstrap-icons.css"; */
 
-/* You can add g
+/* You can add global styles to this file, and also import other style files */
+
+/* @import '~animate.css/animate.css'; */
 
 
-lobal styles to this file, and also import other style files */
+
 @font-face {
     font-family: 'Manrope';
     src: url('/assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
@@ -147,6 +149,21 @@ p {
     padding: 1%;
 }
 
+.mt-2 {
+    margin-top: 2%;
+}
+
+.mt-3 {
+    margin-top: 3%;
+}
+
+.mt-4 {
+    margin-top: 4%;
+}
+
+.mt-6 {
+    margin-top: 6%;
+}
 
 .mb-2 {
     margin-bottom: 2%;
